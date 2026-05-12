@@ -2,11 +2,14 @@
 
 @layer base {
   :root {
-    --color-primary: #1a1a2e;
-    --color-accent: #e94560;
-    --color-accent-hover: #d63851;
-    --color-surface: #f8fafc;
-    --color-muted: #64748b;
+    --color-primary: #1a1a1a;
+    --color-primary-deep: #111111;
+    --color-accent: #e8782a;
+    --color-accent-hover: #d46a20;
+    --color-accent-light: #f5a623;
+    --color-surface: #faf8f5;
+    --color-muted: #6b7280;
+    --color-warm: #f9f4ef;
   }
 }
 
@@ -26,16 +29,26 @@
   }
 
   .gradient-hero {
-    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d1f14 50%, #1a1a1a 100%);
   }
 
   .gradient-accent {
-    background: linear-gradient(135deg, #e94560 0%, #c2185b 100%);
+    background: linear-gradient(135deg, #e8782a 0%, #d46a20 100%);
+  }
+
+  .gradient-warm {
+    background: linear-gradient(135deg, #2d1f14 0%, #1a1a1a 100%);
   }
 
   .glass {
-    background: rgba(255, 255, 255, 0.08);
+    background: rgba(26, 26, 26, 0.85);
     backdrop-filter: blur(12px);
-    border: 1px solid rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(232, 120, 42, 0.15);
+  }
+
+  .glass-light {
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
   }
 }
