@@ -5,7 +5,7 @@ export default function Footer() {
         <div className="flex flex-col items-center text-center gap-6">
           {/* Logo */}
           <div className="flex items-center gap-3">
-            <img src="/images/logo.svg" alt="Kilometerklubben" className="w-12 h-12 object-contain" />
+            <img src="/images/medal-logo.jpg" alt="Kilometerklubben" className="w-10 h-10 rounded-full object-cover" />
             <div>
               <span className="text-white font-bold text-sm">
                 Kilometer<span className="text-[var(--color-accent)]">klubben</span>

@@ -19,7 +19,7 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <Link href="/" className="flex items-center gap-3">
-              <img src="/images/logo.svg" alt="Kilometerklubben" className="w-10 h-10 object-contain" />
+              <img src="/images/medal-logo.jpg" alt="Kilometerklubben" className="w-9 h-9 rounded-full object-cover" />
               <div className="flex flex-col leading-tight">
                 <span className="text-white font-bold text-base tracking-tight">
                   Kilometer<span className="text-[var(--color-accent)]">klubben</span>
