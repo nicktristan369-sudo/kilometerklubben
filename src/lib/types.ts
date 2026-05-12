@@ -38,9 +38,12 @@ export interface EventWithSpots extends Event {
 export interface Registration {
   id: string;
   event_id: string;
-  user_id: string;
+  user_id: string | null;
   status: "confirmed" | "cancelled" | "waitlist";
   notes: string | null;
+  participant_name: string | null;
+  participant_email: string | null;
+  participant_phone: string | null;
   created_at: string;
 }
 

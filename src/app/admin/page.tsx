@@ -531,17 +531,16 @@ export default function AdminPage() {
                         <tr key={reg.id} className="border-b border-gray-50 hover:bg-gray-50/50">
                           <td className="px-4 py-3">
                             <div className="flex items-center gap-2">
-                              {reg.profiles?.avatar_url ? (
-                                <img src={reg.profiles.avatar_url} alt="" className="w-7 h-7 rounded-full" />
-                              ) : (
-                                <div className="w-7 h-7 rounded-full bg-[var(--color-accent)] flex items-center justify-center text-white text-xs font-bold">
-                                  {(reg.profiles?.full_name || "?")[0].toUpperCase()}
-                                </div>
-                              )}
-                              <span className="font-medium text-gray-900">{reg.profiles?.full_name || "Ukendt"}</span>
+                              <div className="w-7 h-7 rounded-full bg-[var(--color-accent)] flex items-center justify-center text-white text-xs font-bold">
+                                {(reg.participant_name || reg.profiles?.full_name || "?")[0].toUpperCase()}
+                              </div>
+                              <span className="font-medium text-gray-900">{reg.participant_name || reg.profiles?.full_name || "Ukendt"}</span>
                             </div>
                           </td>
-                          <td className="px-4 py-3 text-gray-600">{reg.profiles?.email}</td>
+                          <td className="px-4 py-3 text-gray-600">
+                            <div>{reg.participant_email || reg.profiles?.email}</div>
+                            {reg.participant_phone && <div className="text-xs text-[var(--color-muted)]">{reg.participant_phone}</div>}
+                          </td>
                           <td className="px-4 py-3 text-gray-600">{reg.events?.title}</td>
                           <td className="px-4 py-3">
                             <span className={`text-xs font-medium px-2 py-1 rounded-full ${
