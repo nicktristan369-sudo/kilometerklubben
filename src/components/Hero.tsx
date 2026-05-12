@@ -9,7 +9,10 @@ export default function Hero() {
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
         <div className="max-w-3xl">
-          {/* Badge */}
+          {/* Logo + Badge */}
+          <div className="mb-10">
+            <img src="/images/logo.svg" alt="Kilometerklubben" className="w-24 h-24 sm:w-28 sm:h-28 object-contain mb-6" />
+          </div>
           <div className="inline-flex items-center gap-2 glass-light rounded-full px-4 py-2 mb-8">
             <span className="w-2 h-2 bg-[var(--color-accent)] rounded-full animate-pulse" />
             <span className="text-white/70 text-sm font-medium">Nyt løbefællesskab i Silkeborg</span>
