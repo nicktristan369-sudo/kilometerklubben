@@ -15,16 +15,16 @@ export default function Navbar() {
     <>
       <AuthModal isOpen={showAuth} onClose={() => setShowAuth(false)} />
 
-      <nav className="fixed top-0 left-0 right-0 z-50 glass">
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-[#1a1a1a]/95 backdrop-blur-xl border-b border-white/5" style={{ paddingTop: 'env(safe-area-inset-top)' }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <Link href="/" className="flex items-center gap-3">
-              <img src="/images/logo.svg" alt="Kilometerklubben" className="w-10 h-10 object-contain" />
-              <div className="flex flex-col leading-tight">
-                <span className="text-white font-bold text-base tracking-tight">
+              <img src="/images/logo.svg" alt="Kilometerklubben" className="w-8 h-8 object-contain flex-shrink-0" />
+              <div className="flex flex-col leading-tight min-w-0">
+                <span className="text-white font-bold text-sm sm:text-base tracking-tight">
                   Kilometer<span className="text-[var(--color-accent)]">klubben</span>
                 </span>
-                <span className="text-[10px] text-white/40 uppercase tracking-widest">Silkeborg</span>
+                <span className="text-[9px] text-white/40 uppercase tracking-[0.15em]">Silkeborg</span>
               </div>
             </Link>
 
