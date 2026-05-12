@@ -19,15 +19,11 @@ export default function ChatWidget() {
     e.preventDefault();
     if (!name.trim() || !message.trim()) return;
 
-    // Open WhatsApp/SMS or construct mailto
     const text = `Hej Frida! Jeg hedder ${name}. ${message}`;
     const phone = "4529426055";
     
-    // Try SMS/WhatsApp link
-    window.open(
-      `https://wa.me/${phone}?text=${encodeURIComponent(text)}`,
-      "_blank"
-    );
+    // Direct navigation works on mobile (window.open gets blocked)
+    window.location.href = `https://wa.me/${phone}?text=${encodeURIComponent(text)}`;
 
     setMessageSent(true);
   };
