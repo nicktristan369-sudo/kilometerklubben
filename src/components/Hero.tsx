@@ -15,15 +15,6 @@ export default function Hero() {
       </div>
 
       <div className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16 sm:pb-20 pt-32">
-        {/* Logo */}
-        <div className="mb-8">
-          <img
-            src="/images/logo.svg"
-            alt="Kilometerklubben"
-            className="w-20 h-20 sm:w-24 sm:h-24 object-contain drop-shadow-2xl"
-          />
-        </div>
-
         {/* Badge */}
         <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/15 rounded-full px-4 py-2 mb-6">
           <span className="w-2 h-2 bg-[var(--color-accent)] rounded-full animate-pulse" />
